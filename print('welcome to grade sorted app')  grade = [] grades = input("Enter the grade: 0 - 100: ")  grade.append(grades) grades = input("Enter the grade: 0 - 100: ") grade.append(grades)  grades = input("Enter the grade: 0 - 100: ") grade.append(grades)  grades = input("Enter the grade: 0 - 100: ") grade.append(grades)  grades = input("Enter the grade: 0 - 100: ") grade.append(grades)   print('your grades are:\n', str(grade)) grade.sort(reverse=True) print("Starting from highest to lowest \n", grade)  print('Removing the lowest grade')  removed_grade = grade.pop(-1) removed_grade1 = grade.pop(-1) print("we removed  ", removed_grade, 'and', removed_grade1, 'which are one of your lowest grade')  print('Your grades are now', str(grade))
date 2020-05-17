@@ -1,0 +1,31 @@
+
+print('welcome to grade sorted app')
+
+grade = []
+grades = input("Enter the grade: 0 - 100: ")
+
+grade.append(grades)
+grades = input("Enter the grade: 0 - 100: ")
+grade.append(grades)
+
+grades = input("Enter the grade: 0 - 100: ")
+grade.append(grades)
+
+grades = input("Enter the grade: 0 - 100: ")
+grade.append(grades)
+
+grades = input("Enter the grade: 0 - 100: ")
+grade.append(grades)
+
+
+print('your grades are:\n', str(grade))
+grade.sort(reverse=True)
+print("Starting from highest to lowest \n", grade)
+
+print('Removing the lowest grade')
+
+removed_grade = grade.pop(-1)
+removed_grade1 = grade.pop(-1)
+print("we removed  ", removed_grade, 'and', removed_grade1, 'which are one of your lowest grade')
+
+print('Your grades are now', str(grade))
